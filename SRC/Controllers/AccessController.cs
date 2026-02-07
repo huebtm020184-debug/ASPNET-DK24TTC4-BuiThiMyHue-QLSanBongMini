@@ -30,6 +30,7 @@ namespace QuanLySanBong.Controllers
                 ConstVar.User = user;
                 return RedirectToAction("ListSanBong", "Home");
             }
+            ModelState.AddModelError(string.Empty, "Tài khoản không tồn tại.");
             return View();
         }
 

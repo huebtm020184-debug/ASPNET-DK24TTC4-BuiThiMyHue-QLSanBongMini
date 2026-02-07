@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "utpuJVxobcg=",
+  "dgSpecHash": "CJ9HeNGEy3c=",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASPNET-DK24TTC4-BuiThiMyHue-QLSanBongMini\\SRC\\QuanLySanBong.csproj",
   "expectedPackageFiles": [
@@ -247,11 +247,7 @@
     "C:\\Users\\lamnh\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\lamnh\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\lamnh\\.nuget\\packages\\x.pagedlist\\8.4.7\\x.pagedlist.8.4.7.nupkg.sha512",
-    "C:\\Users\\lamnh\\.nuget\\packages\\x.pagedlist.mvc.core\\8.4.7\\x.pagedlist.mvc.core.8.4.7.nupkg.sha512",
-    "C:\\Users\\lamnh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\lamnh\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\lamnh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\lamnh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+    "C:\\Users\\lamnh\\.nuget\\packages\\x.pagedlist.mvc.core\\8.4.7\\x.pagedlist.mvc.core.8.4.7.nupkg.sha512"
   ],
   "logs": [
     {
@@ -263,7 +259,7 @@
       "filePath": "D:\\Projects\\ASPNET-DK24TTC4-BuiThiMyHue-QLSanBongMini\\SRC\\QuanLySanBong.csproj",
       "libraryId": "Microsoft.AspNetCore.Identity",
       "targetGraphs": [
-        "net6.0"
+        "net8.0"
       ]
     },
     {
@@ -275,7 +271,7 @@
       "filePath": "D:\\Projects\\ASPNET-DK24TTC4-BuiThiMyHue-QLSanBongMini\\SRC\\QuanLySanBong.csproj",
       "libraryId": "Microsoft.AspNetCore.Identity",
       "targetGraphs": [
-        "net6.0"
+        "net8.0"
       ]
     }
   ]

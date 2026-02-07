@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net8.0": {
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -4189,10 +4189,10 @@
           "JetBrains.Annotations": "2022.3.1"
         },
         "compile": {
-          "lib/net6.0/X.PagedList.dll": {}
+          "lib/net7.0/X.PagedList.dll": {}
         },
         "runtime": {
-          "lib/net6.0/X.PagedList.dll": {}
+          "lib/net7.0/X.PagedList.dll": {}
         }
       },
       "X.PagedList.Mvc.Core/8.4.7": {
@@ -4201,10 +4201,10 @@
           "X.PagedList": "8.4.7"
         },
         "compile": {
-          "lib/net6.0/X.PagedList.Mvc.Core.dll": {}
+          "lib/net7.0/X.PagedList.Mvc.Core.dll": {}
         },
         "runtime": {
-          "lib/net6.0/X.PagedList.Mvc.Core.dll": {}
+          "lib/net7.0/X.PagedList.Mvc.Core.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -11650,7 +11650,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net8.0": [
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.16",
       "Microsoft.AspNetCore.Http.Extensions >= 2.1.0",
       "Microsoft.AspNetCore.Identity >= 2.1.0",
@@ -11684,7 +11684,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -11692,8 +11692,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -11710,8 +11710,8 @@
       "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
@@ -11763,24 +11763,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11789,7 +11771,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -11801,7 +11783,7 @@
       "message": "Package 'Microsoft.AspNetCore.Identity' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-25c8-p796-jg6r",
       "libraryId": "Microsoft.AspNetCore.Identity",
       "targetGraphs": [
-        "net6.0"
+        "net8.0"
       ]
     },
     {
@@ -11811,7 +11793,7 @@
       "message": "Package 'Microsoft.AspNetCore.Identity' 2.1.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-vhvh-528q-ff3p",
       "libraryId": "Microsoft.AspNetCore.Identity",
       "targetGraphs": [
-        "net6.0"
+        "net8.0"
       ]
     }
   ]
