@@ -198,6 +198,10 @@ namespace QuanLySanBong.Controllers
                     ViewBag.Quantity = 0;
                 }
             }
+            else
+            {
+                return RedirectToAction("","");
+            }
             var MyModelView = SelectList(dateBook, mid);
             ViewBag.PlayGroundId = mid;
             return View(MyModelView);

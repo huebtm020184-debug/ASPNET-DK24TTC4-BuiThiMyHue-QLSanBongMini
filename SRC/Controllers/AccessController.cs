@@ -18,12 +18,14 @@ namespace QuanLySanBong.Controllers
         [HttpGet]      
         public ActionResult Login()
         {
-                return View();           
+            ConstVar.User = new Models.User();
+            return View();           
         }
 
         [HttpPost]
         public ActionResult Login(String username, String password)
         {
+            ConstVar.User = new Models.User(); ;
             User user = db.User.FirstOrDefault(u => u.Username == username && u.Password == password);
             if (user != null)
             {
