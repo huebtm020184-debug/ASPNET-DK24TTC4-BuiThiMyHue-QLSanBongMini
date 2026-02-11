@@ -288,7 +288,6 @@ wwwroot\assets\scss\material-dashboard\_utilities.scss
 wwwroot\assets\scss\material-dashboard\_variables.scss
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\img\hinh-nen-san-bong-dep-banner.jpg
 wwwroot\img\sanbongnhantao.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -348,3 +347,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\img\hinh-nen-san-bong-dep-banner.jpg

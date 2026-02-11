@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using QuanLySanBong.Classes;
@@ -19,8 +20,37 @@ namespace QuanLySanBong.Controllers
         {
             db = context;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page, string? searchInput)
         {
+            ViewBag.Title = "Danh sách sân bóng";
+            ViewBag.active = 1;
+            int pageSize = 6;
+            int pageNum = page == null || page < 0 ? 1 : page.Value;
+            if (searchInput == null) searchInput = "";
+            if (Classes.ConstVar.User.UserId != null)
+            {
+                var user = db.User.FirstOrDefault(u => u.UserId == Classes.ConstVar.User.UserId);
+                if (user != null)
+                {
+                    ViewBag.Name = user.DisplayName;
+                    ViewBag.userId = user.UserId;
+                    try
+                    {
+                        ViewBag.Quantity = db.Cart.Include(p => p.CartDetails).
+                       FirstOrDefault(p => p.UserId == Classes.ConstVar.User.UserId).CartDetails.Count();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Quantity = 0;
+                    }
+                }
+                var playgrounds = db.PlayGround.AsNoTracking()
+                    .Where(p => p.PlayGroundName.Contains(searchInput) || p.Address.Contains(searchInput))
+                    .OrderBy(p => p.PlayGroundName);
+                PagedList<PlayGround> lst = new PagedList<PlayGround>(playgrounds, pageNum, pageSize);
+                var MyModelView = new Tuple<IPagedList<PlayGround>, User>(lst, user);
+                return View(MyModelView);
+            }
             return View();
         }
 
@@ -77,6 +107,10 @@ namespace QuanLySanBong.Controllers
                 {
                     ViewBag.Quantity = 0;
                 }
+            }
+            else
+            {
+                return RedirectToAction("Login", "Access");
             }
             var Invoices = db.Invoice.Where(u => u.UserId == ConstVar.User.UserId).OrderByDescending(u => u.InvoiceId);
             //var Invoices = db.Invoice.FirstOrDefault(u => u.UserId == mid);
@@ -198,10 +232,7 @@ namespace QuanLySanBong.Controllers
                     ViewBag.Quantity = 0;
                 }
             }
-            else
-            {
-                return RedirectToAction("","");
-            }
+            
             var MyModelView = SelectList(dateBook, mid);
             ViewBag.PlayGroundId = mid;
             return View(MyModelView);
